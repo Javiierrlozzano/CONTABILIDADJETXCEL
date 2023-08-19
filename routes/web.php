@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::resource('categorias',App\Http\Controllers\CategoriaController::class);
+Route::resource('empresas',App\Http\Controllers\EmpresaController::class);
+Route::resource('codigos',App\Http\Controllers\CodigoController::class);
+Route::resource('usuarios',App\Http\Controllers\UsuarioController::class);
+Route::resource('cajas',App\Http\Controllers\CajaController::class);
+Route::resource('movimientos',App\Http\Controllers\MovimientoController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('categorias/{holamundo}/jet', [App\Http\Controllers\CategoriaController::class, 'nombre'])->name('nombre');

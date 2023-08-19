@@ -15,13 +15,11 @@ class Empresas extends Migration
     {
         Schema::create('empresas', function (Blueprint $table) {
             $table->id();
-            $table->string('Nit');
-            $table->string('Nombre');
-            $table->string('Telefono');
-            $table->string('Email');
-            $table->string('Direccion');
-            $table->string('Logos');
-        }); 
+            $table->string('nombre');
+            $table->string('telefono');
+            $table->string('email');
+            $table->string();
+        });
     }
 
     /**
