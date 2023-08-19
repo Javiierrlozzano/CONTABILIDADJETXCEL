@@ -13,12 +13,11 @@ class Caja extends Migration
      */
     public function up()
     {
-        Schema::create('Caja', function (Blueprint $table) {
+        Schema::create('cajas', function (Blueprint $table) {
             $table->id();
             $table->string('Descripcion');
             $table->string('Estado');
             $table->bigInteger('id_empresa')->unsigned();
-            $table->string();
             $table->foreign('id_empresa')->references('id')->on('empresas')->onDelete('cascade');
     
         });

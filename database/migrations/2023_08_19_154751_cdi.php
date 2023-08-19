@@ -13,9 +13,8 @@ class Cdi extends Migration
      */
     public function up()
     {
-        Schema::create('Cdi', function (Blueprint $table) {
+        Schema::create('Codigos', function (Blueprint $table) {
             $table->id();
-            $table->string('Id');
             $table->string('Codigo');
             $table->string('Descripcion');
             $table->string('Estado');
