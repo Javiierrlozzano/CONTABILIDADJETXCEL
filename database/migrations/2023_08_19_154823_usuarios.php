@@ -13,7 +13,14 @@ class Usuarios extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('usuarios', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre');
+            $table->string('Cedula');
+            $table->string('Telefono');
+            $table->string('Correo');
+            
+        });  
     }
 
     /**

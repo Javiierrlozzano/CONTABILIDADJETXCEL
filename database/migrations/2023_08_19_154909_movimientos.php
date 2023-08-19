@@ -13,7 +13,16 @@ class Movimientos extends Migration
      */
     public function up()
     {
-        //
+       
+        Schema::create('Movimientos', function (Blueprint $table) {
+            $table->id();
+            $table->string('Caja');
+            $table->string('Codigo');
+            $table->bigInteger('Usuario');
+            $table->string('Tipo');
+            $table->foreign('Valor');
+           
+        }); 
     }
 
     /**
