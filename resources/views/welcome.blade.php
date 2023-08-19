@@ -1,4 +1,4 @@
-﻿
+﻿@if (auth()->check())
 <!DOCTYPE html>
 <html lang="en">
 
@@ -138,8 +138,7 @@
                                     onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();"> <i class="demo-pli-unlock icon-lg icon-fw"></i>
                                         {{ __('Cerrar Sesion') }} </a>
-                                       
-                                        
+                                        @csrf
                                     </form>
                                     </li>
                                     
@@ -176,7 +175,9 @@
                     <div class="col-md-12">
                         <div class="panel">
                             @yield('content')
-                            
+                            @if (Route::is('home'))
+                            @include('graficas.index')
+                            @endif
                             <!--===================================================-->
                             <!--End Buttons Addon-->
                         </div>
@@ -285,7 +286,7 @@
                 
                             <!--Menu list item-->
                             
-                            
+                            @if (Auth::user()->users_Perfils ==1 ||Auth::user()->users_Perfils ==2  )
                                     
                             
                             <!--Menu list item-->
@@ -305,7 +306,8 @@
                                         
                                     </ul>
                                 </li>
-                           
+                                @endif
+                                @if (Auth::user()->users_Perfils ==1 )
                             <li class="list-divider"></li>
                             <li>
                                 <a href="#">
@@ -341,7 +343,7 @@
                                     <li><a href="{{ route('offices.index') }}">Offices</a></li>
                                 </ul>
                             </li>
-                         
+                            @endif
                             </ul>
                         </div>
                     </div>
@@ -431,5 +433,9 @@
 
 
 </html>
+@else
+<script> 
 
+</script>
+@endif
 
