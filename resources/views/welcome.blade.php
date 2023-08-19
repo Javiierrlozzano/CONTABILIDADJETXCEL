@@ -137,8 +137,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();"> <i class="demo-pli-unlock icon-lg icon-fw"></i>
-                                        {{ __('Cerrar Sesion') }} </a>
-                                       
+                                         </a>
                                         
                                     </form>
                                     </li>
@@ -176,7 +175,7 @@
                     <div class="col-md-12">
                         <div class="panel">
                             @yield('content')
-                            
+                           
                             <!--===================================================-->
                             <!--End Buttons Addon-->
                         </div>
@@ -210,8 +209,8 @@
                                             <span class="pull-right dropdown-toggle">
                                                 <i class="dropdown-caret"></i>
                                             </span>
-                                            <p class="mnp-name"> {{ Auth::user()->name }}</p>
-                                            <span class="mnp-desc"> {{ Auth::user()->email }}</span>
+                                            <p class="mnp-name"> </p>
+                                            <span class="mnp-desc"> </span>
                                         </a>
                                     </div>
                                     <div id="profile-nav" class="collapse list-group bg-trans">
@@ -273,7 +272,7 @@
                                     <li class="list-divider"></li>	
                                     <li>
                                 
-                                <a href=" {{ url('/tickes/'.Auth::user()->id.'/show/'.Auth::user()->users_sedes)  }}">
+                                <a href=" ">
                                     <i class="demo-pli-computer-secure"></i>
                                     <span class="menu-title" >
                                     Crear Requerimiento
@@ -285,7 +284,7 @@
                 
                             <!--Menu list item-->
                             
-                            
+                          
                                     
                             
                             <!--Menu list item-->
@@ -298,14 +297,14 @@
                     
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                        <li><a href="{{ url('sede/' . Auth::user()->users_sedes . '/detalle-equipos')}}">Inventario Equipo</a></li>
+                                        <li><a href="">Inventario Equipo</a></li>
                                         <li><a href="tables-bootstrap.html">Mantenimientos</a></li>
-                                        <li><a href="{{ route('reparaciones.index') }}">Reparaciones Nv2</a></li>
+                                        <li><a href="">Reparaciones Nv2</a></li>
                                         <li><a href="tables-footable.html">Envio Equipos</a></li>
                                         
                                     </ul>
                                 </li>
-                           
+                                
                             <li class="list-divider"></li>
                             <li>
                                 <a href="#">
@@ -315,10 +314,10 @@
                                 </a>
                                 <!--Submenu-->
                                 <ul class="collapse">
-                                <li><a href="{{route('sedes.index')}}">Sedes</a></li>
-                                    <li><a href="{{route('areas.index')}}">Areas</a></li>
+                                <li><a href="">Sedes</a></li>
+                                    <li><a href="">Areas</a></li>
                                     <li class="list-divider"></li>
-                                    <li><a href="{{route('medios.index')}}">Medios</a></li>
+                                    <li><a href="">Medios</a></li>
                                 </ul>
                             </li>
                             <li class="list-divider"></li>
@@ -332,16 +331,16 @@
                                 </a>
                                 <!--Submenu-->
                                 <ul class="collapse">
-                                    <li><a href="{{ route('mantenimientos.index') }}">Plan Estrategico Mantenimientos</a></li>
-                                    <li><a href="{{ route('programas.index') }}">Programas</a></li>
-                                    <li><a href="{{ route('windows.index') }}">Sistemas Operativos</a></li>
-                                    <li><a href="{{ route('marcas.index') }}">Marca</a></li>
-                                    <li><a href="{{ route('tipo-equipos.index') }}">Tipo Equipo</a></li>
-                                    <li><a href="{{ route('modelos.index') }}">Modelos Equipo</a></li>
-                                    <li><a href="{{ route('offices.index') }}">Offices</a></li>
+                                    <li><a href="">Plan Estrategico Mantenimientos</a></li>
+                                    <li><a href=" ">Programas</a></li>
+                                    <li><a href="">Sistemas Operativos</a></li>
+                                    <li><a href="">Marca</a></li>
+                                    <li><a href="">Tipo Equipo</a></li>
+                                    <li><a href="">Modelos Equipo</a></li>
+                                    <li><a href="">Offices</a></li>
                                 </ul>
                             </li>
-                         
+                            
                             </ul>
                         </div>
                     </div>
@@ -432,4 +431,7 @@
 
 </html>
 
+<script> 
+
+</script>
 
