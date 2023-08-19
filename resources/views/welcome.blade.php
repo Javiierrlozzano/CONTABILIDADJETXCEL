@@ -270,14 +270,9 @@
                                     </a>
                                 </li>
                                     <li class="list-divider"></li>	
-                                    <li>
+                                    
                                 
-                                <a href=" ">
-                                    <i class="demo-pli-computer-secure"></i>
-                                    <span class="menu-title" >
-                                    Crear Requerimiento
-                                    </span>
-                                </a>
+                               
                             </li>
                             <!--Menu list item-->
                             
@@ -291,36 +286,22 @@
                             <li>
                                     <a href="#">
                                         <i class="demo-pli-receipt-4"></i>
-                                        <span class="menu-title">Utilidades</span>
+                                        <span class="menu-title">Movimientos</span>
                                         <i class="arrow"></i>
                                     </a>
                     
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                        <li><a href="">Inventario Equipo</a></li>
-                                        <li><a href="tables-bootstrap.html">Mantenimientos</a></li>
-                                        <li><a href="">Reparaciones Nv2</a></li>
-                                        <li><a href="tables-footable.html">Envio Equipos</a></li>
+                                        <li><a href="">Ingresos</a></li>
+                                        <li><a href="tables-bootstrap.html">Egresos</a></li>
+                                        
                                         
                                     </ul>
                                 </li>
                                 
                             <li class="list-divider"></li>
-                            <li>
-                                <a href="#">
-                                    <i class="demo-pli-split-vertical-2"></i>
-                                    <span class="menu-title">Zonas</span>
-                                    <i class="arrow"></i>
-                                </a>
-                                <!--Submenu-->
-                                <ul class="collapse">
-                                <li><a href="">Sedes</a></li>
-                                    <li><a href="">Areas</a></li>
-                                    <li class="list-divider"></li>
-                                    <li><a href="">Medios</a></li>
-                                </ul>
-                            </li>
-                            <li class="list-divider"></li>
+                          
+                            
                         <!--Category name-->
                         <li>
                                 <a href="#">
@@ -331,13 +312,12 @@
                                 </a>
                                 <!--Submenu-->
                                 <ul class="collapse">
-                                    <li><a href="">Plan Estrategico Mantenimientos</a></li>
-                                    <li><a href=" ">Programas</a></li>
-                                    <li><a href="">Sistemas Operativos</a></li>
-                                    <li><a href="">Marca</a></li>
-                                    <li><a href="">Tipo Equipo</a></li>
-                                    <li><a href="">Modelos Equipo</a></li>
-                                    <li><a href="">Offices</a></li>
+                                    <li><a href="">Empresas</a></li>
+                                    <li><a href=" ">Clientes</a></li>
+                                    <li><a href="">Usuarios</a></li>
+                                    <li><a href="">Codigos</a></li>
+                                    <li><a href="">Caja</a></li>
+                                    
                                 </ul>
                             </li>
                             
