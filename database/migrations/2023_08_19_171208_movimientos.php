@@ -13,16 +13,18 @@ class Movimientos extends Migration
      */
     public function up()
     {
-       
         Schema::create('Movimientos', function (Blueprint $table) {
             $table->id();
-            $table->string('Caja');
-            $table->string('Codigo');
-            $table->bigInteger('Usuario');
+            $table->bigInteger('id_Caja')->unsigned();
+            $table->bigInteger('id_Codigos')->unsigned();
+            $table->bigInteger('id_Usuario')->unsigned();
             $table->string('Tipo');
-            $table->foreign('Valor');
-           
-        }); 
+            $table->string('Valor');
+            $table->foreign('id_Caja')->references('id')->on('cajas')->onDelete('cascade');
+            $table->foreign('id_Codigos')->references('id')->on('codigos')->onDelete('cascade');
+            $table->foreign('id_Usuario')->references('id')->on('usuarios')->onDelete('cascade');
+
+        });
     }
 
     /**
