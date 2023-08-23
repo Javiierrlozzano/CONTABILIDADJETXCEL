@@ -34,7 +34,7 @@ class CajaController extends Controller
     {
         $caja = new Caja();
         $empresa = Empresa::pluck('Nombre','id');
-        return view('caja.create', compact('caja'));
+        return view('caja.create', compact('caja','empresa'));
     }
 
     /**
