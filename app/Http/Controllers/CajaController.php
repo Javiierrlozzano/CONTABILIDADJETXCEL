@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Caja;
+use App\Empresa;
 use Illuminate\Http\Request;
 
 /**
@@ -32,6 +33,7 @@ class CajaController extends Controller
     public function create()
     {
         $caja = new Caja();
+        $empresa = Empresa::pluck('Nombre','id');
         return view('caja.create', compact('caja'));
     }
 
