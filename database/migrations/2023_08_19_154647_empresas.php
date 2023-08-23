@@ -18,7 +18,9 @@ class Empresas extends Migration
             $table->string('nombre');
             $table->string('telefono');
             $table->string('email');
-            $table->string();
+            $table->string('logos');
+            $table->string('direccion');
+            $table->timestamps();
         });
     }
 

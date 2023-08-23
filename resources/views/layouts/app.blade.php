@@ -312,11 +312,10 @@
                                 </a>
                                 <!--Submenu-->
                                 <ul class="collapse">
-                                    <li><a href="">Empresas</a></li>
-                                    <li><a href=" ">Clientes</a></li>
-                                    <li><a href="">Usuarios</a></li>
-                                    <li><a href="">Codigos</a></li>
-                                    <li><a href="">Caja</a></li>
+                                    <li><a href="{{ route('empresas.index') }}">Empresas</a></li>   
+                                    <li><a href="{{ route('usuarios.index') }}">Usuarios</a></li>
+                                    <li><a href="{{ route('codigos.index') }}">Codigos</a></li>
+                                    <li><a href="{{ route('cajas.index') }}">Caja</a></li>
                                     
                                 </ul>
                             </li>

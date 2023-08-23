@@ -19,7 +19,7 @@ class Caja extends Migration
             $table->string('Estado');
             $table->bigInteger('id_empresa')->unsigned();
             $table->foreign('id_empresa')->references('id')->on('empresas')->onDelete('cascade');
-    
+            $table->timestamps();
         });
     }
 

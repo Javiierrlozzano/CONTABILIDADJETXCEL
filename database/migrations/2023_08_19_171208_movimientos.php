@@ -23,7 +23,7 @@ class Movimientos extends Migration
             $table->foreign('id_Caja')->references('id')->on('cajas')->onDelete('cascade');
             $table->foreign('id_Codigos')->references('id')->on('codigos')->onDelete('cascade');
             $table->foreign('id_Usuario')->references('id')->on('usuarios')->onDelete('cascade');
-
+            $table->timestamps();
         });
     }
 

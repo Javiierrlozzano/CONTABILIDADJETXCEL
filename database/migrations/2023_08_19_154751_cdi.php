@@ -18,7 +18,7 @@ class Cdi extends Migration
             $table->string('Codigo');
             $table->string('Descripcion');
             $table->string('Estado');
-            
+            $table->timestamps();
         });  
     }
 

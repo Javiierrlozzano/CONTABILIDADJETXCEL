@@ -19,7 +19,7 @@ class Usuarios extends Migration
             $table->string('Cedula');
             $table->string('Telefono');
             $table->string('Correo');
-            
+            $table->timestamps();
         });  
     }
 
