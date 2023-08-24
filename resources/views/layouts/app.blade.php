@@ -62,6 +62,7 @@
                 </div>
                 <!--================================-->
                 <!--End brand logo & name-->
+                
                 <!--Navbar Dropdown-->
                 <!--================================-->
                 <div class="navbar-content">
@@ -78,7 +79,25 @@
                         <!--End Navigation toogle button-->
                         <!--Search-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        
+                        <li class="mega-dropdown">
+                            <a href="#" class="mega-dropdown-toggle">
+                                <i class="demo-pli-layout-grid"></i>
+                            </a>
+                            <div class="dropdown-menu mega-dropdown-menu">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-3">
+
+                                        <!--Mega menu list-->
+                                        <ul class="list-unstyled">
+									        <li class="dropdown-header"><i class="demo-pli-file icon-lg icon-fw"></i> Creación de Cajas</li>
+									        <li><a href="#">Crear Nueva Caja</a></li>
+									                                                </ul>
+   
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <!--End Search-->
 
