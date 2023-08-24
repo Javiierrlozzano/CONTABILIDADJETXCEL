@@ -34,7 +34,16 @@ class CajaController extends Controller
     {
         $caja = new Caja();
         $empresa = Empresa::pluck('Nombre','id');
+    
         return view('caja.create', compact('caja','empresa'));
+    }
+
+    public function buscar($id)
+    {
+        $caja = Caja::where('id_empresa',$id);
+      
+        
+        return $caja ;
     }
 
     /**
