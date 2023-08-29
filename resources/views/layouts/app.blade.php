@@ -39,6 +39,9 @@
     <!--Demo [ DEMONSTRATION ]-->
     <link href="{{asset('../resources/css/demo/nifty-demo.min.css')}}" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script>
+        var urls= ""
+    </script>
     <link href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.bootstrap4.min.css" rel="stylesheet">
 </head>
 <body>
@@ -79,6 +82,11 @@
                         <!--End Navigation toogle button-->
                         <!--Search-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        @if ($message = Session::get('success'))
+                        <div class="alert alert-success">
+                            <p>{{ $message }}</p>
+                        </div>
+                        @endif
                         <li class="mega-dropdown">
                             <a href="#" class="mega-dropdown-toggle">
                                 <i class="demo-pli-layout-grid"></i>
@@ -90,7 +98,7 @@
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
 									        <li class="dropdown-header"><i class="demo-pli-file icon-lg icon-fw"></i> Creación de Cajas</li>
-									        <li><a href="#">Crear Nueva Caja</a></li>
+									        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Crear Nueva Caja</a></li>
 									                                                </ul>
    
                                     </div>
@@ -100,7 +108,7 @@
                         </li>
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <!--End Search-->
-
+                    @include('caja.modalcajas')
                     </ul>
                     <ul class="nav navbar-top-links">
                         <li class="dropdown">

@@ -24,4 +24,3 @@ Route::resource('usuarios',App\Http\Controllers\UsuarioController::class);
 Route::resource('cajas',App\Http\Controllers\CajaController::class);
 Route::resource('movimientos',App\Http\Controllers\MovimientoController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('categorias/{holamundo}/jet', [App\Http\Controllers\CategoriaController::class, 'nombre'])->name('nombre');

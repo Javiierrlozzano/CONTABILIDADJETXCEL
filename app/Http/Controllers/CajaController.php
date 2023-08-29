@@ -58,8 +58,8 @@ class CajaController extends Controller
 
         $caja = Caja::create($request->all());
 
-        return redirect()->route('cajas.index')
-            ->with('success', 'Caja created successfully.');
+        return back()->with('success','Caja creada exitosamente');
+        
     }
 
     /**
